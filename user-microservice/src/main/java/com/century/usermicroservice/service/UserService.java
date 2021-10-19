@@ -54,12 +54,12 @@ public class UserService {
 
     //Obtener los carros asociados al userId de la entity Car en car-microservice
     public List<Car> getCarsOfUserid(Integer userId){
-        return restTemplate.getForObject("http://localhost:8002/car/byuser/" + userId, List.class);
+        return restTemplate.getForObject("http://car-microservice/car/byuser/" + userId, List.class);
     }
 
     //Obtener los carros asociados al userId de la entity Car en car-microservice
     public List<Byke> getBykesOfUserId(Integer userId){
-        return restTemplate.getForObject("http://localhost:8003/byke/byuser/" + userId, List.class);
+        return restTemplate.getForObject("http://byke-microservice/byke/byuser/" + userId, List.class);
     }
 
 

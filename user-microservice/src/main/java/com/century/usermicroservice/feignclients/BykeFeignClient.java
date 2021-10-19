@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@FeignClient(name = "byke-microservice", url = "http://localhost:8003")
+@FeignClient(name = "byke-microservice")
 @RequestMapping("/byke")
 public interface BykeFeignClient {
 

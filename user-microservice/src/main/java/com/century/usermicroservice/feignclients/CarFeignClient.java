@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
-
-@FeignClient(name = "car-microservice", url = "http://localhost:8002")
+/*
+    Como ya esta registrado en eureka no hace falta colocarlo
+    @FeignClient(name = "car-microservice", url = "http://localhost:8002")
+ */
+@FeignClient(name = "car-microservice")
 @RequestMapping("/car")
 public interface CarFeignClient {
 
